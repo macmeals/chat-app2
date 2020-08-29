@@ -10,6 +10,7 @@ class RoomsController < ApplicationController
   else
     render :new
   end
+ end
 
   private
 
@@ -17,8 +18,5 @@ class RoomsController < ApplicationController
     params.require(:room).permit(:name ,user_ids:[])
   
   end
-
-
- end
 
 end

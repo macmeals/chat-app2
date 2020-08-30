@@ -23,13 +23,13 @@ class RoomsController < ApplicationController
   room.destroy
   redirect_to root_path
   
-end
+ end
 
   private
 
-  def room_params
+ def room_params
     params.require(:room).permit(:name ,user_ids:[])
   
-  end
+ end
 
 end
